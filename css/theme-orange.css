@@ -5210,7 +5210,7 @@ footer.bg-dark a {
   padding-top: 180px;
 }
 .pt240 {
-  padding-top: 240px;
+  padding-top: 150px;
 }
 .pb0 {
   padding-bottom: 0;
@@ -5267,7 +5267,7 @@ footer.bg-dark a {
   padding-bottom: 180px;
 }
 .pb240 {
-  padding-bottom: 240px;
+  padding-bottom: 150px;
 }
 @media all and (max-width: 990px) {
   .mb-s-0 {
