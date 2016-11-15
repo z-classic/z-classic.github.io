@@ -224,7 +224,7 @@
                                     <img alt="zclassic" src="img/logo-dark.png" class="image-large" />
                                     <h2 class="mb-xs-16"><br>Zclassic is a fork of Zcash</h2>
                                     <p class="lead mb40">
-		                                * Submit your logo, we will soon proceed to a community vote to elect the definitive one.
+		                                * Submit your logo, we will soon hold a community vote to select the definitive one.
 		                            </p>
 		                        </div>
 		                    </div>
@@ -243,7 +243,7 @@
                                     <i class="ti-hummer icon"></i>
 		                            <h2 class="mb-xs-16"><br>No Founders Tax</h2>
 		                            <p class="lead mb40">
-		                                All mining rewards in Zclassic go to miners,<br>unlike Zcash founders that take 20% of mining rewards for the first 4 years.
+		                                All mining rewards in Zclassic go direcly to the miners,<br>while in Zcash the founders take 20% of the rewards for the first 4 years.
 		                            </p>
 		                            <a class="btn btn-lg btn-filled" href="#getstarted">Get Started</a>
 		                        </div>
@@ -340,10 +340,10 @@
                                 Zero-knowledge proving scheme is a decentralized and open-source technology that offers privacy and selective transparency of transactions.
                             </p>
                             <p>
-                                Zclassic is a fork of Zcash: <a href="https://twitter.com/HeyRhett" target="_blank">(@HeyRhett)</a> decided to take another path by removing 20% fee. Miners are simply earning their fair reward, we believe they deserve it, and the coin development can be supported by the community. ZCL also differs from ZEC by removing the slow start <a href="https://z.cash/blog/slow-start-and-mining-ecosystem.html" target="_blank">(source)</a>, we are not trying to deliberately engineer scarcity: The Market decide the price.
+                                Zclassic is a fork of Zcash: <a href="https://twitter.com/HeyRhett" target="_blank">(@HeyRhett)</a> decided to take another path by removing the 20% fee. Miners are simply earning their fair reward, we believe they deserve it, and the coin development can be supported by the community. ZCL also differs from ZEC by removing the slow start <a href="https://z.cash/blog/slow-start-and-mining-ecosystem.html" target="_blank">(source)</a>, we are not trying to deliberately engineer scarcity: The Market decides the price.
                             </p>
                             <p>
-                                We are using the same parameters which were produced in the famous top secure "trusted setup meeting" <a href="https://z.cash/blog/the-design-of-the-ceremony.html" target="_blank">(source)</a> where Peter Todd was present, and confirmed <a href="https://www.reddit.com/r/ZClassic/comments/5bbpmr/we_should_invite_petertodd_to_our_trusted_setup/" target="_blank">(source)</a> us it was safe to use. It is enough that one of the participant kept his key in secret and destroyed it to have the whole system secure.
+                                We are using the same parameters which were produced in the now famous secure "trusted setup meeting" <a href="https://z.cash/blog/the-design-of-the-ceremony.html" target="_blank">(source)</a> where Peter Todd participated, and he confirmed to us <a href="https://www.reddit.com/r/ZClassic/comments/5bbpmr/we_should_invite_petertodd_to_our_trusted_setup/" target="_blank">(source)</a> they are safe to use. If just one of the participants kept their key secret and destroyed it, the whole system is secure.
                             </p>
                         </div>
                     </div>
@@ -460,8 +460,8 @@
                                         sudo apt-get install vim<br><br>
                                         vim ~/.zclassic/zclassic.conf<br><br>
                                         * press i for insert mode and write:<br><br>
-					addnode=dnsseed.zclassic.org<br>
-					addnode=dnsseed.rotorproject.org<br>
+				        addnode=dnsseed.zclassic.org<br>
+				        addnode=dnsseed.rotorproject.org<br>
                                         rpcuser=rpcusername<br>
                                         rpcpassword=yourrandompassword<br><br>
                                         * press escape | press : | write wq | and press enter<br><br>
@@ -471,21 +471,23 @@
                                     </p>
                                     <p>
                                         create t-addr:<br>
-                                        ~/zclassic/./src/zcash-cli getnewaddress<br><br>
+                                        ./src/zcash-cli getnewaddress<br><br>
                                         create z-addr:<br>
-                                        ~/zclassic/./src/zcash-cli z_getnewaddress<br><br>
+                                        ./src/zcash-cli z_getnewaddress<br>
+                                        ztbqWB8VDjVER7uLKb4oHp2v54v2a1jKd9o4FY7mdgQ3gDfG8MiZLvdQga8JK3t58yjXGjQHzMzkGUxSguSs6ZzqpgTNiZG<br><br>
+                                        ZADDR='ztbqWB8VDjVER7uLKb4oHp2v54v2a1jKd9o4FY7mdgQ3gDfG8MiZLvdQga8JK3t58yjXGjQHzMzkGUxSguSs6ZzqpgTNiZG'<br><br>
                                         address list:<br>
                                         ./src/zcash-cli z_listaddresses<br><br>
                                         network stats:<br>
-                                        ~/zclassic/./src/zcash-cli getinfo<br><br>
+                                        ./src/zcash-cli getinfo<br><br>
                                         send with z-addr:<br>If someone gives you their z-addr:<br>
                                         FRIEND='zcfPjWhubYxCHYknDPc9di3V5yvsqLv6iLVq55TqyNnB5naUUw4bptnrmdS4PNLBF5UnJRRcUxFLcbFBNb8y263ZfjC82hT'<br>
                                         You can send 0.9 ZEC by doing:<br>
                                         ./src/zcash-cli z_sendmany "$ZADDR" "[{\"amount\": 0.9, \"address\": \"$FRIEND\"}]"
                                         check:<br>
-                                        z./src/zcash-cli z_getoperationresult<br><br>
+                                        ./src/zcash-cli z_getoperationresult<br><br>
                                         transaction list:<br>
-                                        ~/zclassic/./src/zcash-cli listtransactions<br><br>
+                                        ./src/zcash-cli listtransactions<br><br>
                                     </p>
                                     <p>
                                         <br>
@@ -559,6 +561,12 @@
                                         <span>Exchange</span>
                                     </div>
                                     <div class="content text-center">
+                                        <p>
+                                            https://bittrex.com/Market/Index?MarketName=BTC-ZCL
+                                        <br>
+                                        <a class="btn btn-sm btn-icon" href="https://bittrex.com/Market/Index?MarketName=BTC-ZCL" target="_blank">
+                                            <i class="fa fa-link"></i>
+                                        </a>
                                         <p>
                                             https://c-cex.com/?p=zcl-btc
                                         <br>
