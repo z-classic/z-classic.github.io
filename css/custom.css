@@ -1,1 +1,11 @@
 /****** PLACE YOUR CUSTOM STYLES HERE ******/
+
+.menu > li > ul li a {
+	margin-left: 6px;
+}
+
+.menu > li ul {
+  min-width: 200px;
+  width: auto;
+}
+
