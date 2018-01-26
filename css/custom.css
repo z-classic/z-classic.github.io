@@ -29,3 +29,7 @@
 .modal-strip.bottom {
   bottom: 1%;
 }
+
+.modal-strip.center .close-modal {
+  top: 12%;
+}
