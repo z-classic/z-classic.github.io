@@ -353,106 +353,30 @@
                     <div class="row">
                         <div class="col-md-4 col-sm-6">
                             <div class="image-tile outer-title text-center">
-                                <i class="fa fa-linux fa-5x" aria-hidden="true"></i>
+                                <i class="fa fa-file-text fa-5x" aria-hidden="true"></i>
                                 <div class="title mb16">
-                                    <h5 class="uppercase mb0"><br>Linux</h5>
+                                    <h5 class="uppercase mb0"><br>Electrum</h5>
                                     <span></span>
                                 </div>
-                                <div class="content text-center">
-                                        <a href="https://github.com/z-classic/zclassic" target="_blank">github.com/z-classic</a>
+
+                                <div class="content text-center col-sm-12 col-md-12">
+                                    <a target="_blank" class="btn btn-lg col-sm-offset-1 col-sm-10 col-md-10 col-md-offset-1" href="https://github.com/BTCP-community/electrum-zcl/releases">Windows, Linux, Mac Only.</a>
                                 </div>
-								                <br>
-                              <div class="modal-container">
-                                <a class="btn btn-lg btn-modal" href="#">
-                                    <i class="ti-ruler-pencil"></i> Tutorial</a>
-                                <div class="foundry_modal">
-                                    <h4>Zclassic tutorial with Ubuntu 16.04</h4>
-                                    <hr>
-                                    <p>
-                                        1 - install dependencies:
-                                    </p>
-                                    <p>
-                                        sudo apt-get install \<br>
-                                            build-essential pkg-config libc6-dev m4 g++-multilib \<br>
-                                            autoconf libtool ncurses-dev unzip git python \<br>
-                                            zlib1g-dev wget bsdmainutils automake<br><br>
-                                    </p>
-                                    <p>
-                                        2 - clone repo:
-                                    <p>
-                                        git clone https://github.com/z-classic/zclassic.git<br><br>
-                                    </p>
-                                    <p>
-                                        3 - setup:
-                                    </p>
-                                    <p>
-                                        cd zclassic
-                                        <br><br>
-                                        ./zcutil/build.sh -j$(nproc)
-                                        <br><br>
-                                        ./zcutil/fetch-params.sh
-                                        <br><br>
-                                        ./src/zcashd<br><br>
-                                    </p>
-                                    <p>
-                                        4 - after starting zcashd, stop it, and create a conf file:
-                                    </p>
-                                    <p>
-                                        sudo apt-get install vim<br><br>
-                                        vim ~/.zclassic/zclassic.conf<br><br>
-                                        * press i for insert mode and write:<br><br>
-                                        addnode=dnsseed.zclassic.org<br>
-                                        addnode=zcl-explorer.com<br>
-                                        addnode=eu1.zcl-explorer.com<br>
-                                        addnode=as1.zcl-explorer.com<br>
-                                        addnode=zclassicexplorer.com<br>
-                                        rpcuser=rpcusername<br>
-                                        rpcpassword=yourrandompassword<br><br>
-                                        * press escape | press : | write wq | and press enter<br><br>
-                                    </p>
-                                    <p>
-                                        5 - using Zclassic
-                                    </p>
-                                    <p>
-                                        create t-addr:<br>
-                                        ./src/zcash-cli getnewaddress<br><br>
-                                        create z-addr:<br>
-                                        ./src/zcash-cli z_getnewaddress<br>
-                                        ztbqWB8VDjVER7uLKb4oHp2v54v2a1jKd9o4FY7mdgQ3gDfG8MiZLvdQga8JK3t58yjXGjQHzMzkGUxSguSs6ZzqpgTNiZG<br><br>
-                                        ZADDR='ztbqWB8VDjVER7uLKb4oHp2v54v2a1jKd9o4FY7mdgQ3gDfG8MiZLvdQga8JK3t58yjXGjQHzMzkGUxSguSs6ZzqpgTNiZG'<br><br>
-                                        address list:<br>
-                                        ./src/zcash-cli z_listaddresses<br><br>
-                                        network stats:<br>
-                                        ./src/zcash-cli getinfo<br><br>
-                                        send with z-addr:<br>If someone gives you their z-addr:<br>
-                                        FRIEND='zcfPjWhubYxCHYknDPc9di3V5yvsqLv6iLVq55TqyNnB5naUUw4bptnrmdS4PNLBF5UnJRRcUxFLcbFBNb8y263ZfjC82hT'<br>
-                                        You can send 0.9 ZEC by doing:<br>
-                                        ./src/zcash-cli z_sendmany "$ZADDR" '[{"amount": 0.9, "address": "$FRIEND"}]'
-                                        check:<br>
-                                        ./src/zcash-cli z_getoperationresult<br><br>
-                                        transaction list:<br>
-                                        ./src/zcash-cli listtransactions<br><br>
-                                    </p>
-                                    <p>
-                                        <br>
-                                    </p>
-                                </div>
-                            </div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="image-tile outer-title text-center">
-                                <i class="fa fa-windows fa-5x" aria-hidden="true"></i>
+                                <i class="fa fa-file-text fa-5x" aria-hidden="true"></i>
                                 <div class="title mb16">
-                                    <h5 class="uppercase mb0"><br>Windows</h5>
+                                    <h5 class="uppercase mb0"><br>Eleos</h5>
                                     <span></span>
                                 </div>
-                                <div class="content text-center">
-                                        <a href="https://www.reddit.com/r/ZClassic/comments/7kynho/how_to_install_the_windows_zclassic_wallet_yes/" target="_blank">Reddit Tutorial</a>
+
+                                <div class="content text-center col-sm-12 col-md-12">
+                                    <a target="_blank" class="btn btn-lg col-sm-offset-1 col-sm-10 col-md-10 col-md-offset-1" href="https://github.com/johandjoz/Material-Eleos/releases">Windows, Linux Only</a>
                                 </div>
-                                <br>
-                                <div class="content text-center">
-                                    <a class="btn btn-lg" href="https://www.reddit.com/r/ZClassic/comments/7kynho/how_to_install_the_windows_zclassic_wallet_yes/"><i class="ti-ruler-pencil"></i> Tutorial</a>
+                                <div class="content text-center col-sm-12 col-md-12">
+                                    <a target="_blank" class="btn btn-lg col-sm-offset-1 col-sm-10 col-md-10 col-md-offset-1" href="https://github.com/HarrKxx/eleos/releases">Windows, Linux, Mac Only</a>
                                 </div>
                             </div>
                         </div>
@@ -463,63 +387,13 @@
                                     <h5 class="uppercase mb0"><br>Paper</h5>
                                     <span></span>
                                 </div>
-                                <div class="content text-center">
-                                        <a href="https://zclassicpaperwallet.com/" target="_blank">zclassicpaperwallet.com</a>
-                                </div>
-                                <br>
-                                <div class="content text-center">
-                                    <a class="btn btn-lg" href="https://zclassicpaperwallet.com/">Paper Wallet</a>
+
+                                <div class="content text-center col-sm-12 col-md-12">
+                                    <a target="_blank" class="btn btn-lg col-sm-offset-1 col-sm-10 col-md-10 col-md-offset-1" href="https://zclassicpaperwallet.com/">Paper Wallet</a>
                                 </div>
                             </div>
                         </div>
-                          <div class="col-md-4 col-sm-6">
-                            <div class="image-tile outer-title text-center">
-                                <i class="fa fa-chrome fa-5x" aria-hidden="true"></i>
-                                <div class="title mb16">
-                                    <h5 class="uppercase mb0"><br>Web</h5>
-                                    <span></span>
-                                </div>
-                                <div class="content text-center">
-                                        <a href="#" target="_blank">Coming Soon</a>
-                                </div>
-                                <br>
-                                <div class="content text-center">
-                                    <a class="btn btn-lg" href="#">Coming Soon</a>
-                                </div>
-                            </div>
-                        </div>
-                          <div class="col-md-4 col-sm-6">
-                            <div class="image-tile outer-title text-center">
-                                <i class="fa fa-apple fa-5x" aria-hidden="true"></i>
-                                <div class="title mb16">
-                                    <h5 class="uppercase mb0"><br>Apple</h5>
-                                    <span></span>
-                                </div>
-                                <div class="content text-center">
-                                        <a href="#" target="_blank">Coming Soon</a>
-                                </div>
-                                <br>
-                                <div class="content text-center">
-                                    <a class="btn btn-lg" href="#">Coming Soon</a>
-                                </div>
-                            </div>
-                        </div>
-						              <div class="col-md-4 col-sm-6">
-                            <div class="image-tile outer-title text-center">
-                                <i class="fa fa-android fa-5x" aria-hidden="true"></i>
-                                <div class="title mb16">
-                                    <h5 class="uppercase mb0"><br>Android</h5>
-                                    <span></span>
-                                </div>
-                                <div class="content text-center">
-                                        <a href="#" target="_blank">Coming Soon</a>
-                                </div>
-                                <br>
-                                <div class="content text-center">
-                                  <a class="btn btn-lg" href="#">Coming Soon</a>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
                 <div id="tools" class="container">
