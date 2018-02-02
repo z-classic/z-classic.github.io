@@ -21,3 +21,15 @@
 
   text-align: center;
 }
+
+.modal-strip.center {
+  top: 25%;
+  bottom: 38%;
+}
+.modal-strip.bottom {
+  bottom: 1%;
+}
+
+.modal-strip.center .close-modal {
+  top: 12%;
+}
