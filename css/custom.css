@@ -21,3 +21,11 @@
 
   text-align: center;
 }
+
+.modal-header .close {
+  font-size: 30px;
+}
+
+p:last-child {
+  margin-bottom: 0px;
+}
