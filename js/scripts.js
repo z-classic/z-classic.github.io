@@ -1009,7 +1009,12 @@ $(document).ready(function() {
     }
 
     // Startup Modal
-    $('.on-load-modal').modal('show');
+    if (!mr_cookies.hasItem("popUpAlreadyShow")) {
+        $('.on-load-modal').modal('show');
+
+        var nextweek = new Date((new Date()).getTime() + 7 * 24 * 60 * 60 * 1000);
+        mr_cookies.setItem("popUpAlreadyShow", "true", nextweek);
+    }
 });
 
 $(window).load(function() {
