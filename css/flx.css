@@ -1,0 +1,79 @@
+/*<region> *** flex *** */
+.flx
+{
+   display:flex;
+}
+
+.flx100h
+{
+   display:flex;
+   height: 100%;
+}
+
+.flx100w
+{
+   display:flex;
+   width: 100%;
+}
+
+.fg {
+  flex-grow: 1;
+}
+
+/*<region> *** flex-direction *** */
+.dc
+{
+  flex-direction    : column;
+}
+/*</region> ^^^ flex-direction ^^^ */
+
+/*<region> *** justify-content *** */
+.ja
+{
+  justify-content: space-around;
+}
+
+.jb
+{
+  justify-content: space-between;
+}
+
+.jc
+{
+  justify-content: center;
+}
+
+.je
+{
+  justify-content: flex-end;
+}
+
+.js
+{
+  justify-content: flex-start;
+}
+/*</region> ^^^ justify-content ^^^ */
+
+/*<region> *** align-items *** */
+.ac
+{
+  align-items: center;
+}
+
+.as {
+  align-items: flex-start;
+}
+
+.ae {
+  align-items: flex-end;
+}
+/*</region> ^^^ align-items ^^^ */
+
+/*<region> *** flex-wrap *** */
+.ww
+{
+  flex-wrap: wrap;
+}
+/*</region> ^^^ flex-wrap ^^^ */
+
+/*</region> ^^^ flex ^^^ */

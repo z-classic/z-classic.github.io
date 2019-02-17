@@ -10,6 +10,8 @@
     <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/theme-orange.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/flipclock.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/flx.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="https://zclassic.org/img/fav/favicon.ico">
@@ -269,6 +271,17 @@
                 </div>
             </li>
         </ul>
+    </section>
+    <section id="about" class="bg-light">
+        <div class="container">
+          <div class="row">
+              <div class='flx dc ja ac'>
+                  <h2 class="mb8">Countdown to Sapling</h2>
+                  <div class='clock' style='margin-top: 3em; margin-bottom: 2em;'></div>
+                  <h2 class="mb8">activation at blockheight 476969</h2>
+              </div>
+          </div>
+        </div>
     </section>
     <section class="pt0 pb60 pt-xs-0 pb-xs80 bg-secondary">
         <div class="container">
@@ -681,6 +694,28 @@
 <script src="js/smooth-scroll.min.js"></script>
 <script src="js/parallax.js"></script>
 <script src="js/scripts.js"></script>
+<script src="js/flipclock.js"></script>
+<script type="text/javascript">
+  var clock;
+
+  $(document).ready(function() {
+
+    // Grab the current date
+    var currentDate = new Date();
+
+    // Set some date in the future.
+    var futureDate  = new Date('February 24, 2019 21:00:00');
+
+    // Calculate the difference in seconds between the future and current date
+    var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+    // Instantiate a coutdown FlipClock
+    clock = $('.clock').FlipClock(diff, {
+      clockFace: 'DailyCounter',
+      countdown: true
+    });
+  });
+</script>
 </body>
 
 </html>
